@@ -8,13 +8,13 @@
   padding-top: 20px;
   padding: 12px;
   gap: 15px;
-  border: 4px solid #5a7f5a;
+  border: 4px solid #6b5b8f;
   border-radius: 8px;
-  background-color: #b2cea0;
+  background-color: #d4b5e0;
   margin-bottom: 16px;
 }
 .whiteContainer {
-  background-color: #eef0e5;
+  background-color: #f5f1fa;
   margin-bottom: 8px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -23,14 +23,14 @@
   flex-direction: column;
   flex: 1;
   overflow: hidden;
-  border-left: 10px solid #b2cea0;
-  border-right: 10px solid #b2cea0;
-  border-bottom: 10px solid #b2cea0;
+  border-left: 10px solid #d4b5e0;
+  border-right: 10px solid #d4b5e0;
+  border-bottom: 10px solid #d4b5e0;
 }
 .date {
   border-radius: 12px;
-  border: 4px solid #5a7f5a;
-  background-color: #fdfffa;
+  border: 4px solid #6b5b8f;
+  background-color: #faf8fd;
   height: 120px;
   width: 120px;
   display: flex;
@@ -40,7 +40,7 @@
 }
 .date p {
   margin: 0;
-  color: #617461;
+  color: #6b5b8f;
   font-family: "permanent_Marker";
 }
 .date p:first-child {
@@ -64,8 +64,8 @@
 }
 .cheers {
   border-radius: 12px;
-  border: 4px solid #5a7f5a;
-  background-color: #fdfffa;
+  border: 4px solid #6b5b8f;
+  background-color: #faf8fd;
   padding-inline: 10px;
   height: 120px;
   display: flex;
@@ -75,7 +75,7 @@
 }
 .cheers h1 {
   margin: 0;
-  color: #617461;
+  color: #6b5b8f;
   font-size: 32px;
 }
 .avatar {
@@ -85,7 +85,7 @@
 }
 body {
   margin: 4px;
-  background-color: #5a7f5a;
+  background-color: #6b5b8f;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -104,11 +104,11 @@ html {
   border-top-right-radius: 6px;
   align-items: center;
   padding: 10px 8px;
-  background-color: #b2cea0;
+  background-color: #d4b5e0;
   -webkit-app-region: drag;
 }
 .titleText {
-  color: #5f8061;
+  color: #6b5b8f;
   margin: 0;
   font-size: 22px;
   font-family: "permanent_Marker";
@@ -146,8 +146,8 @@ html {
 }
 #progressSection {
   border-radius: 12px;
-  border: 4px solid #5a7f5a;
-  background-color: #fdfffa;
+  border: 4px solid #6b5b8f;
+  background-color: #faf8fd;
   height: 120px;
   width: 120px;
   display: flex;
@@ -157,7 +157,7 @@ html {
 }
 #progressSection > p {
   margin: 0 0 6px 0;
-  color: #617461;
+  color: #6b5b8f;
   font-family: "permanent_Marker";
   font-size: 16px;
   font-weight: bold;
@@ -179,12 +179,12 @@ html {
 }
 .progressBg {
   fill: none;
-  stroke: #d0e8d0;
+  stroke: #e8d4f0;
   stroke-width: 5;
 }
 .progressBar {
   fill: none;
-  stroke: #566d55;
+  stroke: #8b6fa8;
   stroke-width: 6;
   stroke-linecap: round;
   stroke-dasharray: 339.29;
@@ -201,7 +201,7 @@ html {
   font-family: "permanent_Marker";
   font-size: 16px;
   font-weight: bold;
-  color: #759874;
+  color: #9b7db5;
 }
 main {
   flex: 1;
@@ -216,9 +216,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  border: 4px solid #5a7f5a;
+  border: 4px solid #6b5b8f;
   border-radius: 8px;
-  background-color: #b2cea0;
+  background-color: #d4b5e0;
   flex: 1;
   overflow: hidden;
   min-height: 0;
@@ -226,7 +226,7 @@ main {
 .taskTitle h2 {
   font-family: "permanent_Marker";
   font-size: 18px;
-  color: #5f8061;
+  color: #6b5b8f;
   margin: 0;
   flex: 1;
 }
@@ -237,11 +237,11 @@ main {
 }
 .taskPlaceHolder {
   border-radius: 6px;
-  border: 4px solid #5a7f5a;
+  border: 4px solid #6b5b8f;
   padding: 8px;
   font-family: "permanent_Marker";
   font-size: 16px;
-  color: #5f8061;
+  color: #6b5b8f;
   flex: 1;
   height: 50px;
   box-sizing: border-box;
@@ -250,9 +250,9 @@ main {
   outline: none;
 }
 .taskListSection {
-  background-color: #fdfffa;
+  background-color: #faf8fd;
   border-radius: 6px;
-  border: 4px solid #5a7f5a;
+  border: 4px solid #6b5b8f;
   margin-top: 6px;
   flex: 1;
   overflow-y: auto;
@@ -281,8 +281,8 @@ main {
   height: 50px;
   width: 50px;
   border-radius: 4px;
-  border: 4px solid #5a7f5a;
-  background: #5a7f5a;
+  border: 4px solid #6b5b8f;
+  background: #6b5b8f;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -290,7 +290,7 @@ main {
   font-family: "permanent_Marker";
   font-size: 12px;
   font-weight: bold;
-  color: #b2cea0;
+  color: #d4b5e0;
   padding: 6px;
   text-align: center;
   word-wrap: break-word;
@@ -316,7 +316,7 @@ main {
 }
 .confirmModalContent {
   background-color: white;
-  border: 4px solid #5a7f5a;
+  border: 4px solid #6b5b8f;
   border-radius: 8px;
   padding: 24px;
   max-width: 300px;
@@ -326,7 +326,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .confirmModalText {
-  color: #5f8061;
+  color: #6b5b8f;
   font-family: "permanent_Marker";
   font-size: 16px;
   margin: 0;
@@ -343,16 +343,16 @@ main {
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px;
-  border: 2px solid #5a7f5a;
+  border: 2px solid #6b5b8f;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #566d55;
+  background-color: #8b6fa8;
   color: white;
   transition: transform 0.2s ease-out, background-color 0.2s ease-out;
 }
 .confirmYesBtn:hover,
 .confirmNoBtn:hover {
-  background-color: #4a5a47;
+  background-color: #7a5e96;
   transform: scale(1.05);
 }
 #taskList {
@@ -366,37 +366,37 @@ main {
 
 #taskList li {
   background-color: white;
-  border: 3px solid #a2bd91;
+  border: 3px solid #c5a8d9;
   border-radius: 8px;
   padding: 6px 16px;
   display: flex;
   align-items: center;
   gap: 0px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(90, 127, 90, 0.1);
+  box-shadow: 0 2px 6px rgba(107, 91, 143, 0.1);
   font-family: "permanent_Marker";
-  color: #5f8061;
+  color: #6b5b8f;
   font-size: 18px;
 }
 
 #taskList li:hover {
-  border-color: #5a7f5a;
+  border-color: #6b5b8f;
 }
 
 #taskList li.completed {
   opacity: 0.7;
-  background-color: #f0f5f0;
-  border-color: #a8d5a8;
+  background-color: #f5f1fa;
+  border-color: #d4b5e0;
 }
 
 #taskList li.completed span {
-  color: #a8d5a8;
+  color: #d4b5e0;
 }
 
 #taskList li span {
   flex: 1;
   word-wrap: break-word;
-  color: #5f8061;
+  color: #6b5b8f;
   transition: color 0.3s ease;
 }
 
@@ -439,23 +439,23 @@ main {
 }
 
 .taskListSection::-webkit-scrollbar-track {
-  background: #f0f5f0;
+  background: #f5f1fa;
   border-radius: 6px;
   margin: 8px 0;
 }
 
 .taskListSection::-webkit-scrollbar-thumb {
-  background: #b2cea0;
+  background: #d4b5e0;
   border-radius: 6px;
-  border: 2px solid #f0f5f0;
+  border: 2px solid #f5f1fa;
   transition: background 0.3s ease;
 }
 
 .taskListSection::-webkit-scrollbar-thumb:hover {
-  background: #9bc089;
+  background: #c5a8d9;
 }
 
 .taskListSection::-webkit-scrollbar-thumb:active {
-  background: #5a7f5a;
+  background: #6b5b8f;
 }
 
