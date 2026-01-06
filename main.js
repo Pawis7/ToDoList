@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain  } = require("electron");
+const path = require("path");
 
 let win;
 
@@ -13,6 +14,7 @@ const createWindow = () => {
 
     minHeight: 600,
     minWidth: 800,
+    icon: path.join(__dirname, 'Assets/meowmeow.ico'),
     webPreferences: {
       preload: require.resolve('./preload.js')
     }
