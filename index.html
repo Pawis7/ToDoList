@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Lista de Tareas</title>
+  </head>
+
+  <body>
+    <header class="titlebar">
+      <h2 class="titleText">Lista de Tareas</h2>
+      <div class="window-controls">
+        <button id="minimize">
+          <img src="Assets/mini.png" alt="minimize" />
+        </button>
+        <button id="close">
+          <img src="Assets/close.png" alt="close" />
+        </button>
+      </div>
+    </header>
+    <div class="whiteContainer">
+      <header class="header">
+        <section class="date" id="date">
+          <p id="dayName"></p>
+          <p id="dayNumber" class="dayNumber"></p>
+          <p id="month"></p>
+        </section>
+        <div class="cheers">
+          <h1 id="cheers"></h1>
+          <img src="Assets/meowmeow.png" alt="meowmeow" class="avatar" />
+        </div>
+        <section id="progressSection" class="progress">
+          <p>Tu Progreso</p>
+          <div class="progressCircle">
+            <div class="progressCircleInner">
+              <span id="progressText" class="progressPercentage">0%</span>
+            </div>
+            <svg class="progressSvg" viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="54" class="progressBg"></circle>
+              <circle
+                cx="60"
+                cy="60"
+                r="54"
+                class="progressBar"
+                id="progressBar"
+              ></circle>
+            </svg>
+          </div>
+        </section>
+      </header>
+      <main>
+        <article id="input-Task" class="input-Task">
+          <div class="taskTitle">
+            <h2>Mis Tareas</h2>
+          </div>
+          <div class="taskInputContainer">
+            <input
+              id="taskInput"
+              type="text"
+              placeholder="New task..."
+              class="taskPlaceHolder"
+            />
+            <button id="addTaskButton" class="addtaskButton">
+              <img src="./Assets/add.png" alt="add" class="add" />
+            </button>
+            <button id="clearCompletedButton" class="clearTaskButton">Limpiar Lista</button>
+          </div>
+          <section id="task-list-section" class="taskListSection">
+            <ul id="taskList"></ul>
+          </section>
+        </article>
+        <div id="confirmModal" class="confirmModal hidden">
+          <div class="confirmModalContent">
+            <p class="confirmModalText">¿Estás seguro de que quieres limpiar todas las tareas?</p>
+            <div class="confirmModalButtons">
+              <button id="confirmYes" class="confirmYesBtn">Sí</button>
+              <button id="confirmNo" class="confirmNoBtn">No</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script defer src="Scripts/index.js"></script>
+  <script defer src="Scripts/task.js"></script>
+  <script defer src="Scripts/renderer.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</html>

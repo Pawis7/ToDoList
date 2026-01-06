@@ -1,0 +1,461 @@
+.header {
+  color: white;
+  font-family: permanent_Marker;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding: 12px;
+  gap: 15px;
+  border: 4px solid #5a7f5a;
+  border-radius: 8px;
+  background-color: #b2cea0;
+  margin-bottom: 16px;
+}
+.whiteContainer {
+  background-color: #eef0e5;
+  margin-bottom: 8px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  border-left: 10px solid #b2cea0;
+  border-right: 10px solid #b2cea0;
+  border-bottom: 10px solid #b2cea0;
+}
+.date {
+  border-radius: 12px;
+  border: 4px solid #5a7f5a;
+  background-color: #fdfffa;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.date p {
+  margin: 0;
+  color: #617461;
+  font-family: "permanent_Marker";
+}
+.date p:first-child {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.dayNumber {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "permanent_Marker";
+  margin: 4px 0;
+  line-height: 1;
+}
+.date p:last-child {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  margin-top: 6px;
+}
+.cheers {
+  border-radius: 12px;
+  border: 4px solid #5a7f5a;
+  background-color: #fdfffa;
+  padding-inline: 10px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.cheers h1 {
+  margin: 0;
+  color: #617461;
+  font-size: 32px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  transform: scaleX(-1);
+}
+body {
+  margin: 4px;
+  background-color: #5a7f5a;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-select: none;
+}
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  align-items: center;
+  padding: 10px 8px;
+  background-color: #b2cea0;
+  -webkit-app-region: drag;
+}
+.titleText {
+  color: #5f8061;
+  margin: 0;
+  font-size: 22px;
+  font-family: "permanent_Marker";
+  padding-left: 15px;
+}
+.window-controls {
+  display: flex;
+  gap: 8px;
+  -webkit-app-region: no-drag;
+}
+.window-controls button {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.window-controls img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-out;
+}
+.window-controls button:hover img {
+  transform: scale(1.4);
+}
+@font-face {
+  font-family: "permanent_Marker";
+  src: url(PermanentMarker-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+#progressSection {
+  border-radius: 12px;
+  border: 4px solid #5a7f5a;
+  background-color: #fdfffa;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#progressSection > p {
+  margin: 0 0 6px 0;
+  color: #617461;
+  font-family: "permanent_Marker";
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.progressCircle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progressSvg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-90deg);
+}
+.progressBg {
+  fill: none;
+  stroke: #d0e8d0;
+  stroke-width: 5;
+}
+.progressBar {
+  fill: none;
+  stroke: #566d55;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 339.29;
+  stroke-dashoffset: 339.29;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.progressCircleInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.progressPercentage {
+  font-family: "permanent_Marker";
+  font-size: 16px;
+  font-weight: bold;
+  color: #759874;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.input-Task {
+  color: white;
+  font-family: permanent_Marker;
+  padding: 12px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 4px solid #5a7f5a;
+  border-radius: 8px;
+  background-color: #b2cea0;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+.taskTitle h2 {
+  font-family: "permanent_Marker";
+  font-size: 18px;
+  color: #5f8061;
+  margin: 0;
+  flex: 1;
+}
+.taskInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.taskPlaceHolder {
+  border-radius: 6px;
+  border: 4px solid #5a7f5a;
+  padding: 8px;
+  font-family: "permanent_Marker";
+  font-size: 16px;
+  color: #5f8061;
+  flex: 1;
+  height: 50px;
+  box-sizing: border-box;
+}
+.taskPlaceHolder:focus {
+  outline: none;
+}
+.taskListSection {
+  background-color: #fdfffa;
+  border-radius: 6px;
+  border: 4px solid #5a7f5a;
+  margin-top: 6px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+.addtaskButton {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-out;
+}
+.add {
+  height: 70px;
+  width: 70px;
+  transition: transform 0.2s ease-out;
+}
+.addtaskButton:hover img {
+  transform: scale(1.08);
+}
+.clearTaskButton {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  border: 4px solid #5a7f5a;
+  background: #5a7f5a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "permanent_Marker";
+  font-size: 12px;
+  font-weight: bold;
+  color: #b2cea0;
+  padding: 6px;
+  text-align: center;
+  word-wrap: break-word;
+  transition: transform 0.2s ease-out;
+}
+.clearTaskButton:hover {
+  transform: scale(1.08);
+}
+.confirmModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.confirmModal.hidden {
+  display: none;
+}
+.confirmModalContent {
+  background-color: white;
+  border: 4px solid #5a7f5a;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.confirmModalText {
+  color: #5f8061;
+  font-family: "permanent_Marker";
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+.confirmModalButtons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.confirmYesBtn,
+.confirmNoBtn {
+  font-family: "permanent_Marker";
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #5a7f5a;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #566d55;
+  color: white;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+}
+.confirmYesBtn:hover,
+.confirmNoBtn:hover {
+  background-color: #4a5a47;
+  transform: scale(1.05);
+}
+#taskList {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#taskList li {
+  background-color: white;
+  border: 3px solid #a2bd91;
+  border-radius: 8px;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(90, 127, 90, 0.1);
+  font-family: "permanent_Marker";
+  color: #5f8061;
+  font-size: 18px;
+}
+
+#taskList li:hover {
+  border-color: #5a7f5a;
+}
+
+#taskList li.completed {
+  opacity: 0.7;
+  background-color: #f0f5f0;
+  border-color: #a8d5a8;
+}
+
+#taskList li.completed span {
+  color: #a8d5a8;
+}
+
+#taskList li span {
+  flex: 1;
+  word-wrap: break-word;
+  color: #5f8061;
+  transition: color 0.3s ease;
+}
+
+#taskList li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+#taskList li button img {
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+#taskList li > button:first-of-type img {
+  width: 45px;
+  height: 45px;
+}
+
+#taskList li > button:last-of-type img {
+  width: 45px;
+  height: 42px;
+}
+
+#taskList li button:hover {
+  transform: scale(1.15);
+}
+
+#taskList li button:active {
+  transform: scale(0.95);
+}
+
+.taskListSection::-webkit-scrollbar {
+  width: 10px;
+}
+
+.taskListSection::-webkit-scrollbar-track {
+  background: #f0f5f0;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.taskListSection::-webkit-scrollbar-thumb {
+  background: #b2cea0;
+  border-radius: 6px;
+  border: 2px solid #f0f5f0;
+  transition: background 0.3s ease;
+}
+
+.taskListSection::-webkit-scrollbar-thumb:hover {
+  background: #9bc089;
+}
+
+.taskListSection::-webkit-scrollbar-thumb:active {
+  background: #5a7f5a;
+}
+
